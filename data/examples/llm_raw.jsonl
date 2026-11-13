@@ -1,0 +1,1 @@
+{"instance_id": "demo_01", "verdict": "warranted", "confidence": 0.86, "predicted_eids": ["b003"], "issue_tags": [], "rationale_short": "Table 1 supports the reported accuracy on Dataset A."}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Input: claim + path to full paper (no preselected evidence)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "instance_id",
+    "paper_id",
+    "article_path",
+    "claim"
+  ],
+  "properties": {
+    "instance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "paper_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "article_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_location": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"instance_id": "demo_01", "paper_id": "SYNTH_P01", "article_path": "data/examples/SYNTH_P01.json", "claim": {"text": "Method Z achieves 82.0% accuracy on Dataset A.", "claim_type": "numerical_performance", "source_location": "Results, page 3"}}

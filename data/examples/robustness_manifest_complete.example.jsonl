@@ -1,0 +1,2 @@
+{"source_instance_id": "demo_01", "variant_instance_id": "demo_01_order", "transformation": "evidence_order", "semantic_equivalence_checked": true, "checked_by": "student_02"}
+{"source_instance_id": "demo_01", "variant_instance_id": "demo_01_paraphrase", "transformation": "claim_paraphrase", "semantic_equivalence_checked": true, "checked_by": "student_02"}

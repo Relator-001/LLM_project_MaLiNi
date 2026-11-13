@@ -1,0 +1,1 @@
+{"instance_id": "demo_01", "verdict": "warranted", "supporting_eids": ["b003"], "rationale": "Table 1 reports Method Z test accuracy as 82.0% on Dataset A.", "annotator_id": "student_01", "reviewer_id": "student_01", "changes_from_raw": [], "review_status": "draft", "human_minutes": 1.5, "method": "llm_corrected"}

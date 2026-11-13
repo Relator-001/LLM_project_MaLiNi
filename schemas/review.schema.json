@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent human review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "instance_id",
+    "author_id",
+    "reviewer_id",
+    "agreed",
+    "source_checked",
+    "note"
+  ],
+  "properties": {
+    "instance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agreed": {
+      "type": "boolean"
+    },
+    "source_checked": {
+      "type": "boolean"
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "suggested_verdict": {
+      "type": "string",
+      "enum": [
+        "warranted",
+        "overclaimed",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    "suggested_eids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human annotations (manual, corrections, final)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "instance_id",
+    "method",
+    "verdict",
+    "supporting_eids",
+    "rationale",
+    "annotator_id",
+    "reviewer_id",
+    "changes_from_raw",
+    "review_status",
+    "human_minutes"
+  ],
+  "properties": {
+    "instance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "llm_corrected",
+        "agent_corrected",
+        "final"
+      ]
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "warranted",
+        "overclaimed",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    "supporting_eids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "annotator_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "changes_from_raw": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "agreed",
+        "resolved",
+        "disputed"
+      ]
+    },
+    "human_minutes": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

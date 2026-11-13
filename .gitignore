@@ -1,0 +1,17 @@
+# Never commit local secrets or environments
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+# Local runtime logs and generated predictions (keep folder via .gitkeep)
+logs/*.json
+logs/*.jsonl
+outputs/*.json
+outputs/*.jsonl

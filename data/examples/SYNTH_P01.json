@@ -1,0 +1,57 @@
+{
+  "paper_id": "SYNTH_P01",
+  "title": "Synthetic Method Z experiment (NOT a real publication)",
+  "source": {
+    "url": "https://example.org/synthetic-not-real",
+    "authors": [
+      "Example Author"
+    ],
+    "year": 2026
+  },
+  "blocks": [
+    {
+      "bid": "b001",
+      "kind": "text",
+      "section": "Abstract",
+      "page": 1,
+      "text": "We compare Method Z against Baseline R on Dataset A."
+    },
+    {
+      "bid": "b002",
+      "kind": "text",
+      "section": "Methods",
+      "page": 2,
+      "text": "Accuracy on Dataset A is computed on a held-out evaluation split."
+    },
+    {
+      "bid": "b003",
+      "kind": "table",
+      "section": "Results",
+      "page": 3,
+      "label": "Table 1",
+      "text": "Table 1. Test accuracy on Dataset A: Method Z = 82.0%; Baseline R = 79.5%."
+    },
+    {
+      "bid": "b004",
+      "kind": "text",
+      "section": "Results",
+      "page": 3,
+      "text": "Method Z reaches 82.0 percent accuracy on Dataset A."
+    },
+    {
+      "bid": "b005",
+      "kind": "text",
+      "section": "Limitations",
+      "page": 4,
+      "text": "No experiments on other datasets are included in this synthetic example."
+    },
+    {
+      "bid": "b006",
+      "kind": "caption",
+      "section": "Results",
+      "page": 3,
+      "label": "Figure 1",
+      "text": "A toy schematic illustrates the data pipeline without further numerical claims."
+    }
+  ]
+}

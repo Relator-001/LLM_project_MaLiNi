@@ -1,0 +1,2 @@
+{"instance_id": "demo_01_order", "verdict": "warranted", "confidence": 0.86, "predicted_eids": ["b003"], "issue_tags": [], "rationale_short": "Table 1 reports the accuracy stated in the claim."}
+{"instance_id": "demo_01_paraphrase", "verdict": "warranted", "confidence": 0.86, "predicted_eids": ["b003"], "issue_tags": [], "rationale_short": "Table 1 reports the accuracy stated in the claim."}
